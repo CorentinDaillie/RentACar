@@ -1,0 +1,12 @@
+<h2>Choisissez une voiture :</h2>
+<ul class="cars">
+  <li *ngFor="let car of cars" (click)="onSelect(car)"><button class="btn btn-secondary">
+    {{car.model}} : {{car.price}} €/jour
+    </button>
+  </li>
+</ul>
+<div *ngIf="selectedCar">
+  <h2>Vous avez choisi la voiture: {{selectedCar.model | uppercase}}
+  </h2>
+  <button class="btn btn-primary" (click)="gotoDetail()">Choisir mes options de location</button>
+</div>

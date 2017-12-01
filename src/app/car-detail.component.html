@@ -1,0 +1,24 @@
+<div *ngIf="car">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Options de location pour la voiture : <i>{{car.model}}</i></h3>
+  </div>
+  <div class="panel-body">
+        <ul>
+    <li>Modèle : {{car.model}}</li>
+    <li>Prix journalier : {{car.price}} €</li>
+    <li>Transmission : {{car.boite_vitesse}}</li>
+    <li>Nombre de places : {{car.places}}</li>
+    <li>Date de début de location : <input type="date" required [(ngModel)]="car.date_debut" /></li>
+    <li>Date de fin de location : <input type="date" required [(ngModel)]="car.date_fin" /></li>
+  </ul>
+  </div>
+</div>
+
+  <button class="btn btn-success" (click)="rent(car)">Louer</button>
+  <button class="btn btn-warning" (click)="cancelRental(car)">Rendre la voiture</button>
+  <button class="btn btn-info" (click)="goBack()">Retourner au menu</button>
+  <label>État : {{car.rented}}</label>
+</div>
+
+

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+.navbar
+{
+	height: 50px
+}
+
+.navbar span
+{
+	margin-top:0;
+}
+
+.navbar-nav
+{
+	margin: 15px;
+}
+
+.centercontent
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+ul
+{
+	text-decoration: none;
+	list-style-type : none;
+}
+
+button
+{
+	margin: 5px;
+}
